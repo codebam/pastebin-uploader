@@ -6,6 +6,44 @@
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
 	</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sean's pastebin uploader</title>
+    <meta name="viewport" content="width=device-width">
+    <style type="text/css" media="screen">
+      body {
+        height: 85vh;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        height: 70vh;
+        margin: auto;
+        text-align: center;
+      }
+      form {
+        padding: 2em;
+      }
+      textarea {
+        font-size: 1.2em;
+      }
+      textarea, input {
+        margin-bottom: 1em;
+      }
+      @media (min-width: 600px) {
+        textarea {
+          width: 50%;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: black;
+          color: white;
+        }
+      }
+    </style>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
